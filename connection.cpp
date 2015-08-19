@@ -143,24 +143,29 @@ void Connection::add (Packet * packet)
 	lastpacket = packet->time.tv_sec;
 	if (packet->Outgoing())
 	{
-		if (DEBUG)
+		/*if (DEBUG)
 		{
 			std::cout << "Outgoing: " << packet->len << std::endl;
 		}
+		 */
 		sumSent += packet->len;
 		sent_packets->add (packet);
 	} 
 	else 
 	{
+		/*
 		if (DEBUG)
 		{
 			std::cout << "Incoming: " << packet->len << std::endl;
 		}
+		 */
 		sumRecv += packet->len;
+		/*
 		if (DEBUG)
 		{
 			std::cout << "sumRecv now: " << sumRecv << std::endl;
 		}
+		 */
 		recv_packets->add (packet);
 	}
 }

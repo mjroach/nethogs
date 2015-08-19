@@ -196,7 +196,7 @@ int GreatestFirst (const void * ma, const void * mb)
 
 void init_ui ()
 {
-	if(stdout) {
+	if(printtostdout) {
 		std::cout<< "in the init ui" << std::endl;
 	}
 	else{

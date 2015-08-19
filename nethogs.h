@@ -52,7 +52,7 @@
 #define NEEDROOT 1
 #endif
 
-#define DEBUG 0
+#define DEBUG 1
 
 #define REVERSEHACK 0
 

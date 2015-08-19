@@ -70,6 +70,7 @@ int main (int argc, char** argv)
 				break;
 			case 'x':
                 printtostdout = true;
+                break;
 			/*
 			case 'f':
 				argv++;
@@ -81,7 +82,6 @@ int main (int argc, char** argv)
 				break;
 			*/
 			default:
-                std::cerr << "in the default print statement \n";
 				help();
 				exit(EXIT_FAILURE);
 		}

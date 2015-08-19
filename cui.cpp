@@ -49,7 +49,7 @@ extern int viewMode;
 
 extern unsigned refreshlimit;
 extern unsigned refreshcount;
-
+extern unsigned printtostdout;
 #define PID_MAX 4194303
 
 class Line

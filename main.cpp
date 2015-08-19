@@ -18,6 +18,8 @@ static void help(void)
 	//std::cerr << "		-f : format of packets on interface, default is eth.\n";
 	std::cerr << "		-p : sniff in promiscious mode (not recommended).\n";
 	std::cerr << "		-s : sort output by sent column.\n";
+	std::cerr << "		-x : Prints without ncurses.\n";
+
 	std::cerr << "		device : device(s) to monitor. default is all interfaces up and running excluding loopback\n";
 	std::cerr << std::endl;
 	std::cerr << "When nethogs is running, press:\n";
@@ -66,6 +68,8 @@ int main (int argc, char** argv)
 			case 'c':
 				refreshlimit = atoi(optarg);
 				break;
+			case 'X':
+				stdout = true;
 			/*
 			case 'f':
 				argv++;

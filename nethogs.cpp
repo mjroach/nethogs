@@ -58,6 +58,7 @@ unsigned processlimit = 0;
 bool tracemode = false;
 bool bughuntmode = false;
 bool needrefresh = false;
+bool stdout = false;
 // sort on sent or received?
 bool sortRecv = true;
 // viewMode: kb/s or total

@@ -196,14 +196,19 @@ int GreatestFirst (const void * ma, const void * mb)
 
 void init_ui ()
 {
-	WINDOW * screen = initscr();
-	raw();
-	noecho();
-	cbreak();
-	nodelay(screen, TRUE);
-	caption = new std::string ("NetHogs");
-	caption->append(getVersion());
-	//caption->append(", running at ");
+	if(stdout) {
+	cout<< "in the init ui" << endl;
+	}
+	else{
+		WINDOW *screen = initscr();
+		raw();
+		noecho();
+		cbreak();
+		nodelay(screen, TRUE);
+		caption = new std::string("NetHogs");
+		caption->append(getVersion());
+		//caption->append(", running at ");
+	}
 }
 
 void exit_ui ()

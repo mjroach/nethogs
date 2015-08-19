@@ -81,6 +81,7 @@ int main (int argc, char** argv)
 				break;
 			*/
 			default:
+                std::cerr << "in the default print statement \n";
 				help();
 				exit(EXIT_FAILURE);
 		}

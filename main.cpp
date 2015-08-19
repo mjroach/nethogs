@@ -38,7 +38,7 @@ int main (int argc, char** argv)
 	int promisc = 0;
 
 	int opt;
-	while ((opt = getopt(argc, argv, "Vhbtpd:v:c:s")) != -1) {
+	while ((opt = getopt(argc, argv, "Vhbtpd:v:c:s:x")) != -1) {
 		switch(opt) {
 			case 'V':
 				versiondisplay();

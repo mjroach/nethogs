@@ -68,7 +68,7 @@ int main (int argc, char** argv)
 			case 'c':
 				refreshlimit = atoi(optarg);
 				break;
-			case 'X':
+			case 'x':
                 printtostdout = true;
 			/*
 			case 'f':
